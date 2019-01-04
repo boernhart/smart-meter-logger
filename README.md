@@ -5,6 +5,8 @@ Getting power usage data of ISKRA MT175 smart meter using python and a raspberry
 - Write data to MySql Database
 - Log Data into a csv File
 
+The smart meter sends periodically data in the SML (Smart Message Language) Format. No communication to the smart meter is required.
+
 ## Example Web Interface Data
 ```
 Electricity meter reading: 12339.7159 kWh
