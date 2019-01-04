@@ -5,6 +5,14 @@ Getting power usage data of ISKRA MT175 smart meter using python and a raspberry
 - Write data to MySql Database
 - Log Data into a csv File
 
+## Example Web Interface Data
+```
+Electricity meter reading: 12339.7159 kWh
+Overall Consumption: 665 W
+Power Consumption Phase 1: 196 W
+Power Consumption Phase 2: 308 W
+Power Consumption Phase 3: 160 W
+```
 ## Howto
 ### Connect to Smart Meter
 For a connection to the Smart meter you need a USB infrared adapter. There are several adapters on the market that just need to be pluged in. They are usually detected as a casual serial port  ```(/dev/ttyUSB0)``` 
