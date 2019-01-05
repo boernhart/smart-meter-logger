@@ -188,11 +188,10 @@ A  1              2  3  4  5  6                                                 
 760508a5345d620062007263020171016353a700
 ```
 Close-Message (SML_MessageBody = SML_PublicClose.Req = 0x0201)  
-Q= SML_PublicClose.Req Layout:  
+SML_PublicClose.Req Layout:  
 {  
- R= globalSignature SML_Signature OPTIONAL (->01)  
+ 1= globalSignature SML_Signature OPTIONAL (->01)  
 }  
-S= End
 ```
 SML_Message
 A  1          2    3    4            5      6 
