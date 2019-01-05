@@ -56,7 +56,7 @@ def read_thread():
 
     while running == True:
         input = port.read()
-        data = data + input.encode('HEX')
+        data = data + input.encode('HEX')          # Convert Bytes to Hex String to use find function for easy parsing
 
         pos = data.find('1b1b1b1b01010101')        # find start of Frame
 
