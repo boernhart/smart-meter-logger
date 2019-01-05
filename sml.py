@@ -45,14 +45,14 @@ def read_thread():
     buffer = ""
     count = 100
 
-    # serial Port 9600 Baud, 8N1
-    port = serial.Serial(port='/dev/ttyUSB0', baudrate=9600, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE)
-
     global p_L1
     global p_L2
     global p_L3
     global p_sum
     global e_sum
+    
+    # Serial Port 9600 Baud, 8N1
+    port = serial.Serial(port='/dev/ttyUSB0', baudrate=9600, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE)
 
     while running == True:
         input = port.read()
