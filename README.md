@@ -15,6 +15,25 @@ Power Consumption Phase 1: 196 W
 Power Consumption Phase 2: 308 W
 Power Consumption Phase 3: 160 W
 ```
+
+## SML Interpreation
+```Hex Bytes``` Explanation from Smart Message Language Version 1 
+```
+1B 1B 1B 1B - escape sequence
+``` 
+```
+01 01 01 01 - using protocol Version 1
+``` 
+SML Messages
+```
+1B 1B 1B 1B - escape sequence
+``` 
+```
+1a XX YY ZZ - end of message
+``` 
+```XX``` = number of padding bytes at the end of the message to get length division by 4  
+```YY ZZ``` = Checksum - YY = MSB, ZZ = LSB
+
 ## Howto
 ### Connect to Smart Meter
 For a connection to the Smart meter you need a USB infrared adapter. There are several adapters on the market that just need to be pluged in. They are usually detected as a casual serial port  ```(/dev/ttyUSB0)``` 
