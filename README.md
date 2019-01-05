@@ -219,7 +219,7 @@ A  1
 For a connection to the Smart meter you need a USB infrared adapter. There are several adapters on the market that just need to be pluged in. They are usually detected as a casual serial port  ```(/dev/ttyUSB0)``` 
 
 ### Start
-Download the files to a directory and start with ```sudo python MyPower.py```
+Download the files to a directory and start with ```sudo python sml.py```
 
 ### Watch live data
 Enter the ip adress of your raspberry pi in your webbrowser.
@@ -229,7 +229,7 @@ Make sure no other program on the raspberry pi is using Port 80 (like another We
 edit /etc/rc.local and add:
 ```
 cd /your/path
-python MyPower.py 
+python sml.py 
 ```
 
 # For database support
